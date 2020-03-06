@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "nenomusic-b9ac6"
+    "default": "nenomusic-b9ac6",
+    "meetnative": "campstore-ddbde"
   }
 }

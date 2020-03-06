@@ -1,5 +1,5 @@
 import { ActionResult, IAction, reduceAction } from "../../utils/reducerHelper";
-import update from "immutability-helper";
+//import update from "immutability-helper";
 import storage from "redux-persist/es/storage";
 import { Reducer } from "redux";
 import { persistReducer, PersistPartial } from "redux-persist";
@@ -42,12 +42,12 @@ const persistConfig = {
 };
 
 export const reducer = (state = initialState, action: IAction) => {
-  state = reduceAction(RoomActions, action, state);
-  if (action.type === RoomActions.sendMessages) {
-    const message = action.payload;
-    if (Array.isArray(state.loadAuthor.data))
-      state = update(state, { loadAuthor: { data: { $push: [message] } } });
-  }
+  // state = reduceAction(RoomActions, action, state);
+  // if (action.type === RoomActions.sendMessages) {
+  //   const message = action.payload;
+  //   if (Array.isArray(state.loadAuthor.data))
+  //     state = update(state, { loadAuthor: { data: { $push: [message] } } });
+  // }
   return state;
 };
 

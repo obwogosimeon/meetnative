@@ -55,7 +55,7 @@ const persistConfig = {
 };
 
 export const reducer = (state = initialState, action: IAction) => {
-  state = reduceAction(ProfileActions, action, state);
+  // state = reduceAction(ProfileActions, action, state);
   return state;
 };
 

@@ -109,9 +109,12 @@ export const resolvers = {
               querySnapshot.forEach(function(doc) {
                 lastMessages.push(doc.data() as ILastMessage);
               });
-              pubsub.publish("getLastMessagesSync." + recipientId, {
-                getLastMessagesSync: lastMessages
-              });
+              pubsub
+                .publish("getLastMessagesSync." + recipientId, {
+                  getLastMessagesSync: lastMessages
+                })
+                .then()
+                .catch();
             });
           return withUnsubscribe(
             pubsub.asyncIterator("getLastMessagesSync." + recipientId),

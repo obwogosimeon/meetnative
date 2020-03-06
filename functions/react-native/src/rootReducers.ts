@@ -24,9 +24,9 @@ const appReducer = combineReducers({
 export const ClearAll = "ClearAll";
 
 export const rootReducers = (state: undefined, action: AnyAction) => {
-  if (action.type === ClearAll) {
-    state = undefined;
-  }
+  // if (action.type === ClearAll) {
+  //   state = undefined;
+  // }
   return appReducer(state, action);
 };
 

@@ -14,7 +14,7 @@ export const initialState: ISearchState = {
 };
 
 export function search(state = initialState, action: any) {
-  state = reduceAction(SearchActions, action, state);
+  //state = reduceAction(SearchActions, action, state);
 
   return state;
 }

@@ -28,6 +28,6 @@ const initialState: ILoginState = {
 };
 
 export function login(state = initialState, action: any) {
-  state = reduceAction(LoginActions, action, state);
+  // const me = (state = reduceAction(LoginActions, action, state));
   return state;
 }
