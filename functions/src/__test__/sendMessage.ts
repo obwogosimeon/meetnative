@@ -1,4 +1,4 @@
-import { firebase } from "../../../google-app-engine/src/firebase";
+import { firebase } from "../../google-app-engine/src/firebase";
 try {
   const author = {
     profession: "profession",

@@ -6,9 +6,9 @@ import { ApolloServer } from "apollo-server-express";
 
 import { ConnectionContext } from "subscriptions-transport-ws";
 import { GraphQLFormattedError } from "graphql";
-import { resolvers } from "../../google-app-engine/src/resolvers";
-import { typeDefs } from "../../google-app-engine/src/typeDefs";
-import { firebase } from "../../google-app-engine/src/firebase";
+import { resolvers } from "../google-app-engine/src/resolvers";
+import { typeDefs } from "../google-app-engine/src/typeDefs";
+import { firebase } from "../google-app-engine/src/firebase";
 
 const apolloServer = new ApolloServer({
   resolvers,

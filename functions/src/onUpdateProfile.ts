@@ -2,14 +2,14 @@ import { filterPngRequire } from "./compatibility";
 
 filterPngRequire();
 import * as functions from "firebase-functions";
-import { firebase, firestore } from "../../google-app-engine/src/firebase";
-import { IProfile } from "../../react-native/src/rootReducers";
+import { firebase, firestore } from "../google-app-engine/src/firebase";
+import { IProfile } from "../react-native/src/rootReducers";
 import * as _ from "lodash";
 import * as ngeohash from "ngeohash";
-import { distanceKm, langMatch } from "../../react-native/src/utils/utils";
-import { avatars } from "../../react-native/src/components/profile/img/Avatars";
-import { LearnLevel } from "../../react-native/src/LearnLevel";
-import { TeachLevel } from "../../react-native/src/TeachLevel";
+import { distanceKm, langMatch } from "../react-native/src/utils/utils";
+import { avatars } from "../react-native/src/components/profile/img/Avatars";
+import { LearnLevel } from "../react-native/src/LearnLevel";
+import { TeachLevel } from "../react-native/src/TeachLevel";
 import { DocumentSnapshot } from "firebase-functions/lib/providers/firestore";
 
 function rdnRange(min: number, max: number) {

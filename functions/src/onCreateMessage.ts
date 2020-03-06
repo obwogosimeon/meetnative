@@ -1,6 +1,6 @@
 import * as functions from "firebase-functions";
-import { IMessage } from "../../react-native/src/components/room/roomReducer";
-import { IProfile } from "../../react-native/src/rootReducers";
+import { IMessage } from "../react-native/src/components/room/roomReducer";
+import { IProfile } from "../react-native/src/rootReducers";
 import { firebase, firestore } from "../../google-app-engine/src/firebase";
 
 export const onCreateMessage = functions
