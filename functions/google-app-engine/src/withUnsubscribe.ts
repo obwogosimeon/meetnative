@@ -12,7 +12,7 @@ export const withUnsubscribe = (asyncIterator: any, onClose: any) => {
       return asyncIterator.return();
     },
     [$$asyncIterator]() {
-      return this;
+      return withUnsubscribe;
     }
   };
 };
