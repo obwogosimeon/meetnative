@@ -34,7 +34,7 @@
     "graphql-tag": "^2.10.1",
     "graphql-type-json": "^0.2.1",
     "graphql-type-long": "^0.1.1",
-    "grpc": "^1.24.2",
+    "grpc": "^1.24.9",
     "http": "^0.0.0",
     "iterall": "^1.2.2",
     "lodash": "^4.17.15",
